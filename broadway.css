@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter',sans-serif;
+}
+header{
+    margin-top: 10px;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    /* background-color: red; */
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.allcourses{
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #343a30;
+}
+.allcourses i{
+    font-size: 20px;
+}
+.search{
+    font-size: 16px;
+    width: 400px;
+    border-radius: 40px;
+    padding: 10px;
+    border: 1px #e5e5e5 solid;
+}
+.contact-info{
+    font-weight: 700;
+    font-size: 14px;
+    color: #343a30;
+}
+.send{
+    width: 150px;
+    border: none;
+    background-color: #0054C0;
+    padding: 15px 10px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+nav{
+    border: 1px solid #e5e5e5;
+    margin-top: 10px;
+    padding:20px 0;
+}
+.navlist{
+    list-style: none;
+    gap: 30px;
+    display: flex;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+li span{
+    color: #0054c0
+}
+.offer{
+    display:flex;
+    gap: 5px;
+}
+.new{
+    background:linear-gradient(to right, #F44900, #E69900);
+    font-size: 10px;
+    font-weight: 600;
+    width: 45px;
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+    border-radius: 15px;
+}

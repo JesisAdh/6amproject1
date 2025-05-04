@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: bold;
+}
+p{
+    line-height: 1.7;
+}
+.con{
+    width: 1200px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+.jc{
+   justify-content: space-between;
+}
+.ai{
+    align-items: center;
+}
+.as{
+    align-content: start;
+}
+.gap{
+    gap: 18px
+}
+.py{
+    padding: 15px 0;
+}
+.top{
+    background-color: #DDF4CD;
+    color: #024FA1;
+    font-weight: 600;
+}
+header{
+    margin-top: 15px;
+}
+.qr img{
+    height: 70px;
+}
+.logo{
+    width: 650px;
+}
+nav{
+    background: #024FA1;
+    margin-top: 10px;
+}
+nav a{
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.green{
+    background-color: #02A10E;
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 2px;
+}
+.brown{
+    background: #B55B00;
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 2px;
+}
+.left{
+    width: 40%;
+}
+.right{
+    width: 60%;
+}
+.right img{
+    width: 100%;
+}
+.btn{
+    margin-top: 15px;
+    background-color: #024FA1;
+    color: white;
+    padding: 15px;
+    width: 125px;
+    border-radius: 5px;
+    border: none;
+}
+.left .description{
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+/* new setion  */
+.section-title{
+    color: #02a10e;
+    font-weight: 500;
+    font-size: 26px;
+}
+.box{
+    text-align: center;
+}
+.box img{
+    height: 80px;
+}
+.box p{
+    width: 100px;
+    font-size: 13px;
+    color: #333;
+}
+.box h3{
+    color: #024fa1;
+    font-weight: 500;
+    font-size: 24px;
+    width: 120px;
+}
+.vision{
+    text-align: center;
+    margin-top: 25px;
+}
+.vision img{
+    width: 55%;
+}
+.products img{
+    width: 100%;
+    border-radius: 3px;
+}
+.sbox{
+    text-align: center;
+    box-shadow: 0px 0px 10px 2px #454545;
+    border-radius: 3px;
+    padding-bottom:20px;
+}
+.quote{
+    background-image:url(https://skbbl.com.np/frontend/images/greenbg.jpg);
+    color: #fff;
+    padding: 70px 0;
+    margin-top: 100Px;
+}
+.quote-inner{
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    font-size: 22px;
+}
+.w-100{
+    width: 100%;
+    display: block;
+}
+footer{
+    background-color: #024FA1;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 15px;
+}
+.footerbox .infoperson{
+    margin-top: 15px;
+}
+.footerbox img{
+    width: 90px;
+    border-radius: 5px;
+}
+.footerbox .info{
+    line-height: 2;
+}
+.footerbox ul{
+    line-height: 2;
+}
+.copyright li{
+    font-size: 25px;
+    color: #444;
+}
+.copyright p{
+    color: #333;
+    font-size: 14px;
+}
