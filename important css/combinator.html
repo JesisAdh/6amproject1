@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinator</title>
+    <style>
+        /* simple selector tagname,class,id */
+
+        /* descendant cmombinator  */
+        .box p{color: orange;}
+        /* child combintor  */
+        .box > p{background-color: red;}
+        /* next sibling combinator  */
+         .box + p{background-color: blue;}/* box paxi ko first p */
+         /* subsequent sibling combinator */
+         .box ~ p{background-color: blue;}/* box paxi ko all p */
+
+         /* pesudo selectors  */
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+
+      <div class="child">
+        <p>Lorem ipsum dolor sit.</p>
+      </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+
+  </body>
+</html>

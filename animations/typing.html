@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing effect</title>
+    <style>
+      h1 {
+        width: 0;
+        /* height: 40px; */
+        white-space: pre;
+        overflow: hidden;
+        animation: typing 2.5s steps(40, end) forwards,
+          border 0.65s step-end infinite;
+        border-right: 2px solid orange;
+        padding: 0;
+      }
+      @keyframes typing {
+        0% {
+          width: 0;
+        }
+        100% {
+          width: 710px;
+        }
+      }
+
+      @keyframes border {
+        from,to {
+          border-right-color: orange;
+        }
+        50% {
+          border-right-color: transparent;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+@media (min-width:600px){
+    .container{
+        max-width: 1280px;
+    }
+}
+.navbar-brand{
+    width: 250px;
+    color: #4570B6;
+    padding: 5px 10px ;
+    background: #fff;
+    justify-content: space-between;  
+    display: flex; 
+}
+.swiper-slide img{
+    width: 100%;
+}

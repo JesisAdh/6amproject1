@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive taks 2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .grid{
+        display: grid;
+        grid-template-columns:auto auto auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 'o o o' 'r s t'  'q q q' 'p p p';
+      }
+      .box{
+        background-color: red;
+        padding: 50px;
+        text-transform: uppercase;
+      }
+      .header{
+        background-color: cornflowerblue;
+        grid-area: o;
+      }
+      .content{
+        background-color: #e5e5e5;
+        grid-area: p;
+      }
+      .signup{
+        background-color: skyblue;
+        grid-area: q;
+      }
+      .a{
+        background-color: #c9a400;
+        grid-area: r;
+      }
+      .b{
+        background-color:#d44d4d;
+        grid-area: s;
+      }
+      .c{
+        background-color: rgb(182, 67, 235);
+        grid-area: t;        
+    }
+    @media (max-width:480px) {
+        .grid{
+            grid-template-areas:'o' 'p' 'q' 'r' 's' 't';
+            grid-template-rows: auto auto auto auto auto auto;
+            grid-template-columns: 1fr;
+        }   
+    }
+    @media (min-width:480px) and (max-width:780px){
+        .grid{
+            grid-template-rows: auto auto auto auto;
+            grid-template-columns: auto auto;
+            grid-template-areas: 'o o' 'p p' 'q r' 's t';
+        }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+        <div class="header box">
+            [HEADER]
+        </div>
+        <div class="content box">
+            [CONTENT]
+        </div>
+        <div class="signup box">
+            [SIGNUP]
+        </div>
+        <div class="feature a box">
+            [Feature]
+        </div>
+        <div class="feature b box">
+            [Feature]
+        </div>
+        <div class="feature c box">
+            [Feature]
+        </div>
+    </div>
+  </body>
+</html>

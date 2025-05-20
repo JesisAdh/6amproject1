@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    
+      .box{
+        background-color: red;
+        padding: 50px;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      .header{
+        background-color: cornflowerblue;
+        grid-area: o;
+      }
+      .content{
+        background-color: #e5e5e5;
+        grid-area: p;
+      }
+      .signup{
+        background-color: skyblue;
+        grid-area: q;
+      }
+      .a{
+        background-color: #c9a400;
+        grid-area: r;
+      }
+      .b{
+        background-color:#d44d4d;
+        grid-area: s;
+      }
+      .c{
+        background-color: rgb(182, 67, 235);
+        grid-area: t;        
+    }
+
+    @media (min-width:480px){
+        .box{width: 100%;}
+        .con{display: flex; flex-wrap: wrap;}
+        .signup,.feature{width: 50%;}
+    }
+    @media (min-width:768px){
+        .box{width: 100%;}
+        .con{display: flex; flex-wrap: wrap;}
+        .feature{width: 33.333%;}
+        .header{order: 1;}
+        .a{order: 2;}
+        .b{order: 3;}
+        .c{order: 4;}
+        .signup{order: 5;}
+        .content{order: 6;}
+    }
+    </style>
+</head>
+<body>
+        <div class="con">
+        <div class="header box">
+            [HEADER]
+        </div>
+        <div class="content box">
+            [CONTENT]
+        </div>
+        <div class="signup box">
+            [SIGNUP]
+        </div>
+        <div class="feature a box">
+            [Feature]
+        </div>
+        <div class="feature b box">
+            [Feature]
+        </div>
+        <div class="feature c box">
+            [Feature]
+        </div>
+    </div>
+</body>
+</html>

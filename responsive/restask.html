@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Task</title>
+<style>
+    *{margin: 0;padding: 0;box-sizing: border-box;}
+    .green{background: #0abe0a; padding: 40px;}
+    .flex{margin: 20px;}
+    @media (min-width:480px) and (max-width:780px){
+        .box{display: flex; gap:20px; margin: 10px;}
+    }
+    @media (min-width:780px){
+        .flex{display:flex; gap: 20px;}
+    }
+</style>
+</head>
+<body>
+    <div class="green"></div>
+    <div class="flex">
+        <div class="box">
+            <div class="green"></div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis fuga inventore illo repellendus et hic non ex commodi nisi ipsam veritatis quos soluta maiores cupiditate, molestiae necessitatibus similique ullam asperiores! Sed tempora laudantium eveniet eaque.</p>
+        </div>
+        <div class="box">
+            <div class="green"></div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis fuga inventore illo repellendus et hic non ex commodi nisi ipsam veritatis quos soluta maiores cupiditate, molestiae necessitatibus similique ullam asperiores! Sed tempora laudantium eveniet eaque.</p>
+        </div>
+        <div class="box">
+            <div class="green"></div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis fuga inventore illo repellendus et hic non ex commodi nisi ipsam veritatis quos soluta maiores cupiditate, molestiae necessitatibus similique ullam asperiores! Sed tempora laudantium eveniet eaque.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo class in form</title>
+    <style>
+      input{
+        height: 25px;
+        padding: 10px;
+      }
+      input:required {
+        border: 1px solid red;
+      }
+      input:read-only {
+        border: 2px solid blue;
+      }
+      input:focus {
+        outline: none;
+      }
+      input:disabled {
+        color: #555;
+      }
+      input:checked {
+        width: 25px;
+        height: 25px;
+      }
+
+      /* root vairables  */
+      :root {
+        --primaryColor: rgb(241, 58, 58);
+        --grey: #555;
+        --w: 100px;
+      }
+      /* how to use var() */
+      .box {
+        width: var(--w);
+        height: var(--w);
+        background: var(--primaryColor);
+        border: 2px solid var(--grey);
+      }
+      form{
+        display: flex;
+        flex-direction:column;
+        gap: 18px;
+        width: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <input type="text" name="" required />
+      <input type="text" value="Jesis" readonly />
+      <input type="text" value="Ram" disabled />
+      <input type="text" name="" id="" />
+      <input type="checkbox" name="" id="" />
+    </form>
+    <div class="box">jesis</div>
+
+
+  </body>
+</html>

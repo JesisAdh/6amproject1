@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <link rel="stylesheet" href="transform.css">
+</head>
+<body>
+    <!-- <div class="box a">Hello</div>
+    <div class="box b">Hello</div>
+    <div class="box c">Hello</div>
+    <div class="box d">Hello</div>
+    <div class="box e">Hello</div> -->
+
+    <div class="center">
+        <img src="https://cdn.pixabay.com/photo/2022/10/07/12/48/sea-7504986_1280.jpg" alt="">
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+<style>
+    body {
+  display: flex;
+  gap: 35px;
+  padding: 50px;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  transition: 900ms;
+}
+.a {
+  background-color: red;
+  transition-duration: 3s;
+}
+.a:hover {
+  width: 400px;
+  transition-duration: 3s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 1s;
+  /* transition: property duration timing-function delay ; shorthand */
+}
+.b {
+  background-color: blue;
+  transform-origin: right bottom;
+}
+.b:hover {
+  transform: rotate(90deg);
+}
+.c {
+  background-color: green;
+}
+.c:hover {
+  transform: skew(-30deg, -30deg);
+}
+.d {
+  background-color: violet;
+}
+.d:hover{
+    transform: scaleX(1.5);
+}
+.e{
+    background-color: yellowgreen;
+}
+.e:hover{
+    transform: translate(250px,8px);
+}
+.center{
+    transition: 500ms;
+    height: 400px;
+    width: 400px;
+    background-color: green;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    overflow:hidden;
+}
+img{
+    transition: 400ms;
+    filter: grayscale(100%);
+    transform-origin: center center;
+}
+.center:hover img{
+    transform: scale(1.2);
+    transform-origin: center center;
+    transition: 400ms;
+    filter: grayscale(0%);
+}
+.center p{
+    position: absolute;
+    bottom: -120px;
+    left: 0;
+    padding: 20px;
+    color: #fff;
+    transition: 0.9s;
+    font-size: 20px;
+    font-family: sans-serif;
+    background-color: #00000083;
+}
+.center:hover p{
+    bottom: -20px;
+}
+</style>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background </title>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box {
+  height: 95vh;
+  background-color: red;
+  background-image: url(https://cdn.pixabay.com/photo/2025/03/26/18/00/chaffinch-9494979_1280.jpg),
+    url(https://cdn.pixabay.com/photo/2025/03/31/21/30/italy-9505446_640.jpg),
+    url(https://cdn.pixabay.com/photo/2024/04/22/16/38/buildings-8713025_640.jpg),
+    url(https://cdn.pixabay.com/photo/2021/08/12/05/19/cathedral-6539937_640.jpg),
+    url(https://cdn.pixabay.com/photo/2020/08/08/18/58/florence-5473716_640.jpg);
+  background-size: 150px auto;
+  background-repeat: no-repeat;
+  background-position: 0px top, center center, 100% 0px, left 80vh,right 80vh;
+  /* background-attachment: fixed; */
+
+  /* background: ; this is the short hand cs 
+    order: color image repeat attachment position*/
+}
+body {
+  height: 1900px;
+}
+.box1{
+    height: 50vh;
+    background: linear-gradient(#ff000054,rgba(0, 128, 0, 0.377)),url(https://www.andbeyond.com/wp-content/uploads/sites/5/nepal-village-1536x864.jpg);
+    background-size: cover;
+}
+</style>
+</head>
+<body>
+    <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi fuga, quidem debitis et corporis aspernatur mollitia excepturi exercitationem consequatur facere!
+    </div>
+
+    <div class="box1"></div>
+</body>
+</html>

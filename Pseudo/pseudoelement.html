@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Element</title>
+  </head>
+  <!-- pseudo element  -->
+  <style>
+    h2::before {
+      content: "Nepal ";
+    }
+    h2::after {
+      content: " hi";
+    }
+    p::first-line {
+      background-color: pink;
+    }
+    p::first-letter {
+      font-size: 30px;
+    }
+    ::selection
+    {
+        background-color: #76f072;
+        color: white
+    }
+    li::marker{
+        color: red;
+    }
+    input::placeholder{
+        color: pink;
+    }
+    .title{
+        position: relative;
+    }
+
+    .title::before{
+        content: '';
+        position: absolute;
+        top: 7.5px;
+        left: 0px;
+        height: 2px;
+        width: 100%;
+        background-color: red;
+        z-index: -1;
+    }
+    .title span{background-color: red;color: orange;padding: 4px;margin-left: 150px; outline:10px solid #fff;}
+  </style>
+  <body>
+    <h2>Box</h2>
+    <h2>Hello</h2>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa iure maiores
+      quae quas eligendi dolorum voluptate voluptas ex cupiditate dicta totam
+      nemo, provident cum, perferendis nihil, laborum soluta. Consequatur
+      voluptatum quas, quasi neque fuga illo, quis velit, odit omnis nisi et
+      veniam facilis sint cum vel minus necessitatibus doloribus? Officia.
+    </p>
+
+    <ul>
+        <li>Home</li>
+    </ul>
+
+    <input type="text" placeholder="ENter the full name ">
+
+<!-- use of before and aftre  -->
+ <br><br><br>
+
+
+ <div class="title"><span>
+    Main News
+ </span></div>
+  </body>
+</html>

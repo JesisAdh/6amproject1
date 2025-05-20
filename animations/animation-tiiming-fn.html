@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taming fuction</title>
+    <style>
+        .box{
+            position: relative;
+            width: 100px;height: 100px; border: 1px solid black;
+            animation: m 6s forwards, blink 1s 6s infinite forwards;
+        }
+        .a{animation-timing-function: ease;}
+        .b{animation-timing-function: linear;}
+        .c{animation-timing-function: ease-in;}
+        .d{animation-timing-function: ease-out;}
+        .e{animation-timing-function: ease-in-out;}
+        .f{animation-timing-function: steps(10,start);}
+
+        @keyframes m {
+            0%{left: 0;}           
+            100%{left: 500px;} 
+        }
+        @keyframes blink {
+            0%{
+                opacity: 1;
+            }            
+            100%{
+                opacity: 0;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box a">Ease</div>
+    <div class="box b">Linear</div>
+    <div class="box c">Ease In</div>
+    <div class="box d">Ease Out</div>
+    <div class="box e">Ease In Out</div>
+    <div class="box f">Steps</div>
+</body>
+</html>

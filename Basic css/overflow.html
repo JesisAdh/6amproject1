@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box{
+            width: 120ex;
+            height: 120px;
+            border: 2px solid #000;
+        }
+        body{
+            display: flex;
+            gap:25px ;
+            justify-content: space-between;
+        }
+        .a{overflow: visible;}
+        .b{overflow: hidden;}
+        .c{overflow: scroll;}
+        .d{overflow: auto;}
+    </style>
+</head>
+<body>
+    <div class="box a">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime repellat earum voluptate veritatis assumenda possimus! Recusandae, voluptate vero reprehenderit modi beatae quae. Neque, rem nesciunt tenetur necessitatibus voluptatum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis vero autem voluptatum magni, laborum voluptatibus totam nisi id nostrum, fuga debitis veritatis error quo repellendus provident incidunt. Labore..</div>
+    <div class="box b">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime repellat earum voluptate veritatis assumenda possimus! Recusandae, voluptate vero reprehenderit modi beatae quae. Neque, rem nesciunt tenetur necessitatibus voluptatum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis vero autem voluptatum magni, laborum voluptatibus totam nisi id nostrum, fuga debitis veritatis error quo repellendus provident incidunt. Labore..</div>
+    <div class="box c">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime repellat earum voluptate veritatis assumenda possimus! Recusandae, voluptate vero reprehenderit modi beatae quae. Neque, rem nesciunt tenetur necessitatibus voluptatum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis vero autem voluptatum magni, laborum voluptatibus totam nisi id nostrum, fuga debitis veritatis error quo repellendus provident incidunt. Labore..</div>
+    <div class="box d">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime repellat earum voluptate veritatis assumenda possimus! Recusandae, voluptate vero reprehenderit modi beatae quae. Neque, rem nesciunt tenetur necessitatibus voluptatum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis vero autem voluptatum magni, laborum voluptatibus totam nisi id nostrum, fuga debitis veritatis error quo repellendus provident incidunt. Labore..</div>
+</body>
+</html>

@@ -98,3 +98,14 @@ align-content ==     it can be used while we are using the wrapped container to 
 
 text-shadow: parameters (x-axis, y-axis, blur, color)
 in flex we can use inline flec to make ithe flex and also behave like a block 
+
+
+POSTIONS IN CSS
+relative == better to use 
+absolute == to use this we need to keep a position in the parent division as relaive 
+
+
+
+NEW THING TO LEARN :
+
+white space pre makes it look lik what is written inthe html 

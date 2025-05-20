@@ -1,0 +1,79 @@
+.box{
+    height: 140px;
+    width: 140px;
+}
+.a{
+    background-color: red;
+    top: 50;
+    left: 50;
+    position: relative;
+}
+.b{
+    background: green;
+    position: fixed;
+    right: 0;
+    top:0;
+}
+body{
+    height: 1800px;
+}
+.c{
+    background-color: rgba(144, 238, 144, 0.671);
+    position: sticky;
+    top: 10px;
+    z-index: 9;
+}
+.main{
+    width: 400px;
+    height: 400px;
+    background-color: pink;
+    position: relative;
+}
+.small{
+    width:80px;
+    height:80px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: red;
+    z-index: 2;
+}
+.small1{
+    width:80px;
+    height:80px;
+    position: absolute;
+    top: 35px;
+    left:35px;
+    background-color: rgba(0, 0, 0, 0.397);
+    z-index: 1;
+}
+.abc{
+    width: 500px;
+    height: 500px;
+    border: 2px solid #000000;
+    position: relative;
+    margin-left: 50px;
+}
+.item{
+    width: 60px;
+    height: 50px;
+    border: 2px black solid;
+    position: absolute;
+    background-color: #fff;   
+}
+.w{
+    left:45%;
+    top: -40px;
+}
+.x{
+    left:45%;
+    bottom: -20px;
+}
+.y{
+    left:-20px;
+    top: 45%;
+}
+.z{
+    right:-20px;
+    top: 45%;
+}
